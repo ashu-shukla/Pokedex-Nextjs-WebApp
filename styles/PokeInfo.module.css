@@ -1,0 +1,61 @@
+.pokeTop {
+  text-align: center;
+  color: white;
+}
+
+.pokeTop h1 {
+  margin: 0;
+  padding: 30px 0;
+  font-size: 3.5rem;
+}
+.pokeTop p {
+  font-size: 1.5rem;
+}
+
+.icon_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.icon {
+  border-radius: 100%;
+  /* border: 3px solid white; */
+  background-color: white;
+  height: 60px;
+  width: 60px;
+  margin: 10px 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon img {
+  width: 75%;
+}
+
+.pokeimg {
+  margin: auto;
+  width: 300px;
+}
+
+.statul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.statul li {
+  background-color: white;
+  border-radius: 15px;
+  padding: 15px 10px;
+  margin: 30px 10px;
+  width: 180px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+}

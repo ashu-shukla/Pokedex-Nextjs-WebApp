@@ -1,9 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Press+Start+2P&family=Squada+One&display=swap");
+
+/* font-family: 'Archivo Black', sans-serif;
+font-family: 'Press Start 2P', cursive;
+font-family: 'Squada One', cursive; */
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  overflow: auto;
+}
+
+img {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 a {
@@ -13,4 +28,135 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.App-component {
+  margin: auto;
+  padding: 30px 5px;
+  width: 300px;
+  overflow: hidden;
+}
+
+.App-Top {
+  background-color: red;
+  border-bottom: 15px solid black;
+}
+
+.App-Top h1 {
+  text-align: center;
+  margin: 0;
+  padding-top: 80px;
+  font-size: 4em;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  color: #fff;
+  font-family: "Squada One", cursive;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.pokeround {
+  /* margin: auto; */
+  margin-left: 10px;
+  position: relative;
+  top: 57.5px;
+  height: 100px;
+  width: 100px;
+  background-color: #fff;
+  border: 15px solid black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dot {
+  height: 45px;
+  width: 45px;
+  border: 5px solid black;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.container-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-top: 50px;
+}
+
+.Card {
+  cursor: pointer;
+  font-weight: 700;
+  font-family: "Archivo Black", sans-serif;
+  margin: 20px 10px;
+  padding: 8px;
+  border-radius: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  /* box-shadow: 0.2rem 0.8rem 1.6rem rgb(96, 111, 131); */
+  box-shadow: 0.2rem 0.8rem 1.6rem rgb(228, 194, 194);
+}
+
+.Card img {
+  width: 150px;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.pagination {
+  padding: 20px 0 100px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.pagination button {
+  font-size: 1.2rem;
+  background-color: rgba(255, 14, 14, 0.945);
+  font-family: "Archivo Black", sans-serif;
+  color: #fff;
+  width: 170px;
+  border: 2px solid black;
+  padding: 10px 20px;
+  border-radius: 2rem;
+  box-shadow: 0.2rem 0.8rem 1.6rem rgb(96, 111, 131);
+}
+
+.loading {
+  margin-top: 50px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  .Card {
+    font-size: 2rem;
+    margin: 30px 50px;
+    padding: 8px;
+  }
+
+  .Card img {
+    width: 250px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .Card {
+    font-size: 1.6rem;
+    margin: 30px 20px;
+    padding: 8px;
+  }
+
+  .Card img {
+    width: 200px;
+  }
 }

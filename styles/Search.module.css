@@ -1,0 +1,68 @@
+.SearchDiv input{
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+  padding: 10px 5px;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(23, 63, 63);
+}
+.SearchDiv input:focus {
+  outline: none;
+}
+.SearchDiv{
+  width: 100%;
+  border-radius: 10px;
+  background-color: aliceblue;
+  border: 3px solid rgb(37, 52, 71);
+  align-items: center;
+  overflow-x: hidden;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /* box-shadow: 0.2rem 0.8rem 1.6rem rgb(96, 111, 131); */
+}
+
+.SearchDiv ul{
+  position: absolute;
+  z-index: 5;
+  width: 290px;
+  list-style: none;
+  margin: -7px 0 0 -3px;
+  border-left: 3px solid rgb(37, 52, 71);
+  border-right: 3px solid rgb(37, 52, 71);
+  border-bottom: 3px solid rgb(37, 52, 71);
+  /* border-radius: 10px; */
+  font-size: 1rem;
+  background-color: rgb(255, 255, 255);
+  padding: 0;
+  /* border-top: 1px solid rgb(33, 61, 70); */
+  height: 230px;
+  overflow-y: scroll;
+}
+
+.SearchDiv ul::before{
+  content: "";
+}
+
+.SearchDiv li{
+ padding: 10px 5px;
+ cursor: pointer;
+ display: flex;
+ justify-content: space-between;
+}
+.SearchDiv li span{
+  margin: auto 0 auto 10px;
+  font-weight: 700;
+ }
+ .SearchDiv li img{
+  margin: auto 10px auto 0;
+  height: 70px;
+ }
+
+.SearchDiv li:hover{
+  background-color: rgb(232, 245, 248);
+}
+
