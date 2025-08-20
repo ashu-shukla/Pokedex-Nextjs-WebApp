@@ -18,9 +18,9 @@ export default function Footer({ page }) {
       <p>
         © Designed By{" "}
         <span>
-          <Link href="http://www.ashutoshshukla.in/">
-            <a>Ashutosh Shukla</a>
-          </Link>
+          <a href="https://ashutoshshukla.in/?ref=pokeapp" target="_blank">
+            <span>Ashutosh Shukla</span>
+          </a>
         </span>
       </p>
     </div>
